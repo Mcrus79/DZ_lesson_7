@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400;1,600;1,700;1,800;1,900&family=Shojumaru&display=swap");
+/* Стили обнуления */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+body {
+	line-height: 1;
+	color: rgb(71, 71, 71);
+	font-size: 18px;
+	font-family: "Lora";
+	background-color: rgb(223, 221, 221);
+	background-image: url("../img/karnak2-small_4.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	max-width: 100%;
+}
+/* ------------------ */
+
+/* Устанавливаем шапку фиксированой ширины и позиционируем по центру окна */
+.header {
+	width: 1000px;
+	margin: 0px auto;
+	box-shadow: 0px 0px 5px 3px rgba(77, 76, 75, 0.452);
+}
+/* Фон папирус для зоголовка */
+.papirus__top {
+	background-image: url("../img/vintage-papyrus-light_1000.jpg");
+	height: 150px;
+}
+/* Заголовок по центру фона папирус */
+.zagolovok {
+	padding: 50px;
+	text-align: center;
+}
+/* Заголовок кликабельный */
+.zagolovok__sulka {
+	font-family: "Kelly Slab";
+	font-size: 50px;
+	font-weight: 700;
+	color: rgb(80, 80, 80);
+	text-transform: uppercase;
+}
+/* Фон фреска для навигации */
+.freska__image {
+	background-image: url("../img/freska200.jpg");
+	min-height: 200px;
+}
+
+/* Навигация на фоне фреска*/
+.navigation {
+	padding-top: 70px;
+}
+
+.navigation a {
+	font-family: "Kelly Slab", Helvetica, sans-serif;
+	font-size: 20px;
+	color: rgb(223, 222, 222);
+	text-transform: uppercase;
+}
+
+.navigation ul li {
+	display: inline-block;
+	padding-left: 12px;
+}
+
+/* Кнопки по навигации */
+.button {
+	display: block;
+	width: 180px;
+	background-color: rgba(147, 151, 87, 0.671);
+	line-height: 15px;
+	padding: 15px 10px;
+	text-align: center;
+	/* box-shadow: 5px 3px 4px 2px rgba(8, 8, 8, 0.74); */
+	border-radius: 15px;
+	box-shadow: inset 0px 0px 8px 8px rgba(218, 219, 210, 0.596), 5px 3px 4px 2px rgba(148, 148, 145, 0.486);
+}
+
+/* Блок для эфекта прозрачности */
+/* .block{
+	height: 100px;
+
+} */
+/* -------------------Конец шапки------------------------- */
+/* Устанавливаем main фиксированой ширины и позиционируем по центру окна */
+.main {
+	width: 1000px;
+	margin: 0px auto;
+	background: url("../img/ppirus-textura.jpg") fixed; /* Фон для главного текста */
+	box-shadow: 0px 0px 5px 3px rgba(77, 76, 75, 0.274);
+}
+/* Эфекты для основного текста */
+.main p {
+	padding: 5px 100px;
+	text-align: justify;
+	text-indent: 25px;
+	line-height: 30px;
+	text-shadow: 1px 1px 2px rgba(195, 202, 100, 0.562);
+}
+
+/* Подзаголовки италиком */
+
+.text__italic {
+	font-style: italic;
+	font-weight: 700;
+	font-size: 22px;
+}
+
+/* Заголовки второго уровня */
+.main h2 {
+	font-family: Rubik;
+	font-size: 28px;
+	font-weight: 700;
+	padding: 10px 0px 0px 100px;
+	text-shadow: 1px 1px 2px rgba(195, 202, 100, 0.562);
+}
+
+/* Список с картинкой*/
+.arhitektor {
+	padding: 10px 350px 0px 150px;
+	line-height: 30px;
+}
+
+.arhitektor li {
+	min-height: 50px;
+	background: url("../img/scarab-egypt50.png") 0 0 no-repeat;
+	margin: 0px 0px 10px 0px;
+	padding: 12px 0px 0px 55px;
+	text-shadow: 1px 1px 2px rgba(195, 202, 100, 0.562);
+}
+
+/* Фоото пирамид */
+.img__giza {
+	display: block;
+	width: 600px;
+	margin-top: 10px;
+	margin-left: 200px;
+	/* margin: 0px auto; */
+	border-radius: 20px;
+	box-shadow: 1px 0px 5px 3px rgba(77, 76, 75, 0.877);
+}
+/* Фото фараона сделан как фон поверх фиксированого фона пальмы */
+.img__faraon {
+	min-height: 700px;
+	/* background-repeat: no-repeat;
+	background-position:center;
+	background-size: 500px;
+	background-image: url('../img/faraon_statue.jpg'); */
+
+	background: url("../img/faraon_statue.jpg") center no-repeat, url("../img/palma.jpg") 0 0 repeat fixed;
+}
+/* ----------------- */
+.arhitektor__camel {
+	min-height: 650px;
+	background: url("../img/sahara-camel.png") 0px 0px / auto 100% no-repeat;
+}
+/* -------------------------------------- */
+/* ----Боковие фоновые изображения------- */
+.faraon {
+	background: url("../img/egypt-pharaoh.png") 10px 0px /65px repeat-y,
+		url("../img/egypt-pharaoh.png") 920px 0px /65px repeat-y;
+}
+
+.anubis {
+	background: url("../img/egyptian-anubis.png") 2px 0/90px repeat-y,
+		url("../img/egyptian-anubis.png") 910px 0/90px repeat-y;
+}
+.sfinks__giza {
+	min-height: 650px;
+	background: url("../img/sphinx-giza.png") 0 0/1000px no-repeat;
+}
+.ieroglef {
+	background: url("../img/pharaoh-onlinelabels.png") 2px 0/90px repeat-y,
+		url("../img/pharaoh-onlinelabels.png") 910px 0/90px repeat-y;
+}
+
+.nefertiti {
+	padding: 20px 100px 0px 100px;
+}
+
+.nefertiti__image {
+	min-height: 350px;
+	background: url("../img/kisspng-nefertiti.png") 0 0 / 160px repeat-x, url("../img/palma.jpg") 0 0 repeat fixed;
+}
+/* --------------------------------------------- */
+/* ------Кнопка с изображением------------------ */
+
+.button__bottom {
+	padding: 15px 10px;
+	background-color: rgb(35, 187, 60);
+	display: inline-block;
+	width: 100%;
+	max-width: 300px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	color: rgb(255, 255, 255);
+	border-radius: 30px;
+	box-shadow: 0px 5px 2px 0px rgb(24, 88, 69);
+	font-family: "Kelly Slab";
+	font-weight: 700;
+	text-align: center;
+	background: rgb(35, 187, 60) url("../img/scarab-egypt50.png") 20px 0 no-repeat;
+}
+.knopka {
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	padding: 20px 0px;
+	border-top: 2px dashed rgba(161, 161, 90, 0.37);
+}
+/* ---------------------------------------------- */
+/* --------------------Подвал -----------------*/
+.footer {
+	max-width: 1000px;
+	margin: 0px auto;
+}
+
+.footer__ornament {
+	min-height: 50px;
+	background: url("../img/ornament50.jpg") 0px 0px repeat-x;
+}
+
+.copy {
+	font-family: Kelly Slab;
+	font-size: 22px;
+	font-weight: 700;
+	text-align: center;
+	padding: 15px;
+	color: rgb(0, 0, 141);
+}
+/* ---------------------------------------------- */
